@@ -3,6 +3,7 @@ using UnityEngine;
 public class BoardGen : MonoBehaviour
 {
     public Transform road; // prefab to instantiate 
+    private int[,] currentLevel;
     
     public int[,] level_1 = { { 0, 1, 1 ,1, 1, 0, 1, 1, 0},
                               { 0, 0, 0, 0, 1, 0, 0, 0, 0},
@@ -16,6 +17,7 @@ public class BoardGen : MonoBehaviour
 
     void Start() {
         createLevel(level_1);
+        currentLevel = level_1;
     }
 
     void spawnRoad(int x, int y) {
@@ -33,5 +35,9 @@ public class BoardGen : MonoBehaviour
                 }
             }
         }
+    }
+
+    public int[,] getCurrentLevel() {
+        return currentLevel;
     }
 }
