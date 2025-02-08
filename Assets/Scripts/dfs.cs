@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class dfs : MonoBehaviour
 {
-
     int[,] board;
 
     Stack<(int, int)> stack;
@@ -43,6 +42,5 @@ public class dfs : MonoBehaviour
                 }
             }
         }
-
     }
 }
