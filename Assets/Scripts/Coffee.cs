@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,11 +23,11 @@ public class Coffee : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Evil") {
-            Destroy(gameObject);
+            SceneManager.LoadScene("Menu");
         }
 
         if (other.tag == "Coffee") {
-            
+            SceneManager.LoadScene("End");
         }
     }
 }
