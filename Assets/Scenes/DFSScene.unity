@@ -240,6 +240,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.25
       objectReference: {fileID: 0}
+    - target: {fileID: 8859366709012376108, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -351,7 +355,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -376,7 +380,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 4, z: -10}
+  m_LocalPosition: {x: 8, y: 8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22079,11 +22083,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 707259684360409441, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 707259684360409441, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 707259684360409441, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22121,9 +22125,21 @@ PrefabInstance:
       propertyPath: goal
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2035040064889961454, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
+      propertyPath: startx
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035040064889961454, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
+      propertyPath: starty
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6509337843950643221, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
       propertyPath: m_Name
       value: Chickpea
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963464490572405671, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
+      propertyPath: speed
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22193,7 +22209,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3487850137391932607, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
       propertyPath: startx
-      value: 2
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487850137391932607, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
+      propertyPath: starty
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690205123235838113, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5761944813650257228, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
       propertyPath: m_Name
@@ -22201,11 +22225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7305000733741414101, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7305000733741414101, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7305000733741414101, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
       propertyPath: m_LocalPosition.z
