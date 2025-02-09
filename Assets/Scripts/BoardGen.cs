@@ -6,9 +6,9 @@ public class BoardGen : MonoBehaviour
     private int[,] currentLevel;
     public Transform goal;
     
-    public int[,] level_1 = { { 0, 1, 1 ,1, 1, 0, 1, 1, 2},
+    public int[,] level_1 = { { 0, 1, 1 ,1, 1, 0, 1, 1, 0},
                               { 0, 0, 0, 0, 1, 0, 0, 0, 0},
-                              { 0, 1, 0, 1, 1, 0, 1, 1, 0},
+                              { 2, 1, 0, 1, 1, 0, 1, 1, 0},
                               { 1, 1, 0, 1, 0, 0, 1, 0, 0},
                               { 0, 0, 0, 0, 0, 1, 1, 1, 0},
                               { 0, 1, 0, 1, 0, 0, 0, 1, 1},
@@ -17,6 +17,7 @@ public class BoardGen : MonoBehaviour
                               { 1, 0, 0, 0, 0, 0, 0, 0, 0} };
 
     void Start() {
+        FindObjectOfType<ManageAudio>().PlayLoop("Background");
         createLevel(level_1);
         currentLevel = level_1;
     }

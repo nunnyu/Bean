@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class dfs : MonoBehaviour
 {
+    public int startx;
+    public int starty;
     private int[,] board;
     private Stack<(int, int)> stack = new Stack<(int, int)>();
     private bool finished = false;
@@ -17,7 +19,7 @@ public class dfs : MonoBehaviour
     }
 
     void initialize() {
-        pos = (0, 2);
+        pos = (starty, startx);
         script = FindObjectOfType<BoardGen>();
         board = script.level_1;
         movepoint.parent = null;
