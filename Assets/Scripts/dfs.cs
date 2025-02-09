@@ -14,7 +14,7 @@ public class dfs : MonoBehaviour
     public HashSet<(int, int)> visited = new HashSet<(int, int)>();
     BoardGen script;
     
-    [Header("Taco: 2 \nHummus: 3\nSushi: 4")]
+    [Header("Taco: 2 \nHummus: 3\nSushi: 4\nSalad: 6")]
     public int goal;
     private (int, int) pos;    
     void Start() {

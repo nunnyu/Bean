@@ -9,6 +9,7 @@ public class BoardGen : MonoBehaviour
     public Transform sushi;
     public Transform wall;
     public Transform keurig;
+    public Transform salad;
     
     public int[,] level_1 = { { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },  
                               { 1, 0, 0, 0, 1, 0, 0, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1 },  
@@ -25,7 +26,7 @@ public class BoardGen : MonoBehaviour
                               { 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1 },  
                               { 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1 },  
                               { 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1 },  
-                              { 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1 },  
+                              { 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 6, 1, 0, 1, 1, 1, 1 },  
                               { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 } };
                               
     void Start() {
@@ -56,6 +57,8 @@ public class BoardGen : MonoBehaviour
                     spawnPrefab(wall, j, matrix.GetLength(0) - 1 - i);
                 } else if (matrix[i, j] == 5) {
                     spawnPrefab(keurig, j, matrix.GetLength(0) - 1 - i);
+                } else if (matrix[i, j] == 6) {
+                    spawnPrefab(salad, j, matrix.GetLength(0) - 1 - i);
                 }
             }
         }
