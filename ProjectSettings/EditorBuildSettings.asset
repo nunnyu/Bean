@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/DFSScene1.unity
     guid: ba2e8b8a28cc07044bc2d0fe059892ed
   - enabled: 1
-    path: Assets/Scenes/DFSScene2.unity
+    path: Assets/Scenes/DFSScene3.unity
     guid: bcf66daa123be0c4cba9f623862e0145
   - enabled: 1
-    path: Assets/Scenes/DFSScene3.unity
+    path: Assets/Scenes/DFSScene2.unity
     guid: 834c5104b77f0074f85736230b01aadc
   - enabled: 1
     path: Assets/Scenes/DFSScene4.unity
