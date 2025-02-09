@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1008815363006728898}
   - component: {fileID: 1492928333215182755}
   - component: {fileID: 5667690300958249536}
+  - component: {fileID: 3713254342066426483}
   m_Layer: 0
   m_Name: Hover Highlight
   m_TagString: Untagged
@@ -110,3 +111,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3713254342066426483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778862253516229657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b22232c5609528a44a171dd4f655e5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  hover_select: {fileID: 1008815363006728898}
+  hover_bean: {fileID: 186557409837646241, guid: a2ccf738eba196048a2d29b729656652, type: 3}
