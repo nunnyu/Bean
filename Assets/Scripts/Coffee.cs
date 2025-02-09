@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Coffee : MonoBehaviour
 {
+    public int level;
     public float speed;
     public Rigidbody2D rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,7 +28,7 @@ public class Coffee : MonoBehaviour
         }
 
         if (other.tag == "Coffee") {
-            SceneManager.LoadScene("End");
+            SceneManager.LoadScene("DFSScene" + (level + 1));
         }
     }
 }

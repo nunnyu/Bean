@@ -9,10 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 1bb70529ae97dd04490fa77b1b682869
   - enabled: 1
-    path: Assets/Scenes/DFSScene.unity
+    path: Assets/Scenes/DFSScene1.unity
     guid: ba2e8b8a28cc07044bc2d0fe059892ed
   - enabled: 1
-    path: Assets/Scenes/End.unity
+    path: Assets/Scenes/DFSScene2.unity
+    guid: bcf66daa123be0c4cba9f623862e0145
+  - enabled: 1
+    path: Assets/Scenes/DFSScene3.unity
+    guid: 834c5104b77f0074f85736230b01aadc
+  - enabled: 1
+    path: Assets/Scenes/DFSScene4.unity
     guid: e7351f7226b3bc340ba3760ac0a6fd8b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
