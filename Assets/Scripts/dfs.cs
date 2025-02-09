@@ -13,6 +13,9 @@ public class dfs : MonoBehaviour
     public Transform road;
     public HashSet<(int, int)> visited = new HashSet<(int, int)>();
     BoardGen script;
+    
+    [Header("Taco: 2 \nHummus: 3\nSushi: 4")]
+    public int goal;
     private (int, int) pos;    
     void Start() {
         Invoke("initialize", 0.25f); // delay everything so the board is created nicely 
@@ -50,8 +53,7 @@ public class dfs : MonoBehaviour
         if (stack.TryPop(out current))
         {
             movepoint.position = new Vector3(current.Item2, current.Item1);
-            if (script.getBoardRowCol(current.Item1, current.Item2) == 2) {
-                Debug.Log("1");
+            if (script.getBoardRowCol(current.Item1, current.Item2) == goal) {
                 finished = true;
                 return;
             }
@@ -71,7 +73,8 @@ public class dfs : MonoBehaviour
 
                 // Pop items onto stack
                 // Check bounds and if not visited
-                if (newRow >= 0 && newRow < board.GetLength(0) && newCol >= 0 && newCol < board.GetLength(1) && !visited.Contains((newRow, newCol)) && script.getBoardRowCol(newRow, newCol) != 1)
+                if (newRow >= 0 && newRow < board.GetLength(0) && newCol >= 0 && newCol < board.GetLength(1) && !visited.Contains((newRow, newCol)) && 
+                script.getBoardRowCol(newRow, newCol) != 1)
                 {   
                     // Mark index as visited
                     stack.Push((newRow, newCol));

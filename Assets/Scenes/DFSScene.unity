@@ -173,12 +173,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 183414198731099051, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
-      propertyPath: startx
-      value: 5
+      propertyPath: goal
+      value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 183414198731099051, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
-      propertyPath: starty
-      value: 3
+    - target: {fileID: 1905768987576334752, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905768987576334752, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1905768987576334752, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
       propertyPath: m_LocalPosition.x
@@ -223,6 +227,18 @@ PrefabInstance:
     - target: {fileID: 2612376393023260370, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
       propertyPath: m_Name
       value: Edamame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042267586767425403, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042267586767425403, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042267586767425403, guid: f05634694f0fcd44f99fe76800b1c241, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22008,16 +22024,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &825882211 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6509337843950643221, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
-  m_PrefabInstance: {fileID: 1088721864}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &849734921 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6324980303617156163, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
-  m_PrefabInstance: {fileID: 1088721864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &936340333
 GameObject:
   m_ObjectHideFlags: 0
@@ -22111,14 +22117,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6279788549810579035, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
-      propertyPath: road
-      value: 
-      objectReference: {fileID: 7856840579189988523, guid: bbeff2a2a61769342aaa47d1d8dcbdf7, type: 3}
-    - target: {fileID: 6279788549810579035, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
-      propertyPath: movepoint
-      value: 
-      objectReference: {fileID: 849734921}
+    - target: {fileID: 2035040064889961454, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
+      propertyPath: goal
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6509337843950643221, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
       propertyPath: m_Name
       value: Chickpea
@@ -22126,27 +22128,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6509337843950643221, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1088721870}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ad21302a0018ab49b8725a1f397c36e, type: 3}
---- !u!114 &1088721870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825882211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d2b7a11f3d411d42b6d15842486e536, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startx: 8
-  starty: 8
-  movepoint: {fileID: 849734921}
-  road: {fileID: 7856840579189988523, guid: bbeff2a2a61769342aaa47d1d8dcbdf7, type: 3}
 --- !u!1 &1351767528
 GameObject:
   m_ObjectHideFlags: 0
@@ -22177,7 +22160,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   road: {fileID: 7856840579189988523, guid: 834e3a8614a99ab49943d629fa484b4f, type: 3}
-  goal: {fileID: 4587499521451174785, guid: 816527ac19bd5cd4b9590cef544a5faf, type: 3}
+  taco: {fileID: 4587499521451174785, guid: 816527ac19bd5cd4b9590cef544a5faf, type: 3}
+  hummus: {fileID: 4869804080928447940, guid: 3a043f5d83ce8f5489fa45d294c826e4, type: 3}
+  sushi: {fileID: 7722745564012019573, guid: 00c70c8d1b7d14e4a820abf43513c064, type: 3}
 --- !u!4 &1351767530
 Transform:
   m_ObjectHideFlags: 0
@@ -22202,6 +22187,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3487850137391932607, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
+      propertyPath: goal
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3487850137391932607, guid: 9a7a7dc409eefa241a17513165fab103, type: 3}
       propertyPath: startx
       value: 2

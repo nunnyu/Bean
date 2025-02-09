@@ -4,15 +4,17 @@ public class BoardGen : MonoBehaviour
 {
     public Transform road; // prefab to instantiate 
     private int[,] currentLevel;
-    public Transform goal;
+    public Transform taco;
+    public Transform hummus;
+    public Transform sushi;
     
-    public int[,] level_1 = { { 0, 1, 1 ,1, 1, 0, 1, 1, 0},
+    public int[,] level_1 = { { 0, 1, 1 ,1, 1, 4, 1, 1, 0},
                               { 0, 0, 0, 0, 1, 0, 0, 0, 0},
                               { 2, 1, 0, 1, 1, 0, 1, 1, 0},
                               { 1, 1, 0, 1, 0, 0, 1, 0, 0},
                               { 0, 0, 0, 0, 0, 1, 1, 1, 0},
                               { 0, 1, 0, 1, 0, 0, 0, 1, 1},
-                              { 0, 1, 0, 0, 0, 1, 0, 0, 0},
+                              { 0, 1, 0, 0, 0, 1, 0, 0, 3},
                               { 0, 0, 1, 0, 1, 1, 0, 1, 1},
                               { 1, 0, 0, 0, 0, 0, 0, 0, 0} };
 
@@ -35,7 +37,11 @@ public class BoardGen : MonoBehaviour
                 if (matrix[i, j] == 0) {
                     spawnPrefab(road, j, matrix.GetLength(0) - 1 - i);
                 } else if (matrix[i, j] == 2) {
-                    spawnPrefab(goal, j, matrix.GetLength(0) - 1 - i);
+                    spawnPrefab(taco, j, matrix.GetLength(0) - 1 - i);
+                } else if (matrix[i, j] == 3) {
+                    spawnPrefab(hummus, j, matrix.GetLength(0) - 1 - i);
+                } else if (matrix[i, j] == 4) {
+                    spawnPrefab(sushi, j, matrix.GetLength(0) - 1 - i);
                 }
             }
         }
