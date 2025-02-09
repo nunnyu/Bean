@@ -6,11 +6,14 @@ public class dfs : MonoBehaviour
     int[,] board;
 
     Stack<(int, int)> stack;
+    (int, int) startPos = (0, 0);
 
     bool finished = false;
     public Transform movepoint;
         
     void Start() {
+        stack = new Stack<(int, int)> ();
+        stack.Push(startPos);
         BoardGen boardGenScript = FindObjectOfType<BoardGen>();
         board = boardGenScript.getCurrentLevel();
     }

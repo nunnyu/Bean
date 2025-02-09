@@ -40,4 +40,10 @@ public class BoardGen : MonoBehaviour
     public int[,] getCurrentLevel() {
         return currentLevel;
     }
+
+    // Obtain the (visual) element at index row, col where 0,0 is the bottom left 
+    public int getBoardRowCol(int row, int col)
+    {
+        return level_1[level_1.GetLength(0) - 1 - row, col];
+    }
 }

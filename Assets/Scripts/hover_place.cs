@@ -7,7 +7,7 @@ using UnityEngine.Rendering;
 
 public class hover_place : MonoBehaviour
 {
-    public GameObject manager;
+    public GameObject manager; // Board gen script  
     BoardGen referencedScript;
     int[,] board;
     int curRow = 0;
@@ -15,10 +15,12 @@ public class hover_place : MonoBehaviour
 
     bool acceptInput = true;
     public Transform hover_select;
+    public Transform hover_bean;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        board = manager.GetComponent<BoardGen>().level_1;
+        referencedScript = manager.GetComponent<BoardGen>();
+        board = referencedScript.level_1;
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class hover_place : MonoBehaviour
             curCol = Math.Clamp(curCol + 1, 0, board.Length);
         }
         hover_select.position = new Vector3(curCol, curRow, 0);
-        print(curCol + " " + curRow);
+        hover_bean.position = new Vector3(curCol, curRow, 0);
+        print(curRow + "," + curCol + " " + referencedScript.getBoardRowCol(curRow, curCol));
     }
 }
